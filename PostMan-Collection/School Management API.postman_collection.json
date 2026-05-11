@@ -1,0 +1,241 @@
+{
+  "info": {
+    "_postman_id": "af2e23cb-92a8-44a0-8596-4e12bbfac5c9",
+    "name": "School Management API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "45743003"
+  },
+  "item": [
+    {
+      "name": "Add School Api",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "Success Response",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Delhi Public School\",\r\n  \"address\": \"New Delhi\",\r\n  \"latitude\": 28.6139,\r\n  \"longitude\": 77.2090\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://school-management-api-7fwn.onrender.com/addSchool",
+              "protocol": "https",
+              "host": [
+                "school-management-api-7fwn",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "addSchool"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Date",
+              "value": "Mon, 11 May 2026 13:05:02 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "55"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "br"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"3e-PPt66wydmymVVy0/+6Ydw5dgoLI\""
+            },
+            {
+              "key": "rndr-id",
+              "value": "23817010-96eb-47dc"
+            },
+            {
+              "key": "Server",
+              "value": "cloudflare"
+            },
+            {
+              "key": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "x-render-origin-server",
+              "value": "Render"
+            },
+            {
+              "key": "cf-cache-status",
+              "value": "DYNAMIC"
+            },
+            {
+              "key": "CF-RAY",
+              "value": "9fa16490fc767e72-MAA"
+            },
+            {
+              "key": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"message\": \"School added successfully\",\n    \"id\": 21\n}"
+        }
+      ]
+    },
+    {
+      "name": "List Schools Api",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://school-management-api-7fwn.onrender.com/listSchools?latitude=17.3850&longitude=78.4867",
+          "protocol": "https",
+          "host": [
+            "school-management-api-7fwn",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "listSchools"
+          ],
+          "query": [
+            {
+              "key": "latitude",
+              "value": "17.3850"
+            },
+            {
+              "key": "longitude",
+              "value": "78.4867"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "List Schools Api",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://school-management-api-7fwn.onrender.com/listSchools?latitude=17.3850&longitude=78.4867",
+              "protocol": "https",
+              "host": [
+                "school-management-api-7fwn",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "listSchools"
+              ],
+              "query": [
+                {
+                  "key": "latitude",
+                  "value": "17.3850"
+                },
+                {
+                  "key": "longitude",
+                  "value": "78.4867"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Date",
+              "value": "Mon, 11 May 2026 13:08:45 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "1019"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "br"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"b9b-wBNc+yTOUJDjnByky47NPm71+uk\""
+            },
+            {
+              "key": "rndr-id",
+              "value": "9c8218fd-1e9e-41c0"
+            },
+            {
+              "key": "Server",
+              "value": "cloudflare"
+            },
+            {
+              "key": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "x-render-origin-server",
+              "value": "Render"
+            },
+            {
+              "key": "cf-cache-status",
+              "value": "DYNAMIC"
+            },
+            {
+              "key": "CF-RAY",
+              "value": "9fa16a04886554a9-MAA"
+            },
+            {
+              "key": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"count\": 21,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Delhi Public School\",\n            \"address\": \"Hyderabad\",\n            \"latitude\": 17.385000228881836,\n            \"longitude\": 78.48670196533203,\n            \"distance_km\": 0\n        },\n        {\n            \"id\": 5,\n            \"name\": \"DAV Public School\",\n            \"address\": \"Hyderabad\",\n            \"latitude\": 17.385000228881836,\n            \"longitude\": 78.48670196533203,\n            \"distance_km\": 0\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Jubilee hills Public School\",\n            \"address\": \"Hyderabad\",\n            \"latitude\": 17.485000610351562,\n            \"longitude\": 78.88670349121094,\n            \"distance_km\": 43.87\n        },\n        {\n            \"id\": 18,\n            \"name\": \"Narayana School\",\n            \"address\": \"Vijayawada\",\n            \"latitude\": 16.506200790405273,\n            \"longitude\": 80.64800262451172,\n            \"distance_km\": 249.79\n        },\n        {\n            \"id\": 4,\n            \"name\": \"National Public School\",\n            \"address\": \"Bangalore\",\n            \"latitude\": 12.971599578857422,\n            \"longitude\": 77.59459686279297,\n            \"distance_km\": 499.99\n        },\n        {\n            \"id\": 19,\n            \"name\": \"Sri Chaitanya School\",\n            \"address\": \"Visakhapatnam\",\n            \"latitude\": 17.686800003051758,\n            \"longitude\": 83.21849822998047,\n            \"distance_km\": 502.81\n        },\n        {\n            \"id\": 7,\n            \"name\": \"Ryan International School\",\n            \"address\": \"Pune\",\n            \"latitude\": 18.52039909362793,\n            \"longitude\": 73.85669708251953,\n            \"distance_km\": 505.75\n        },\n        {\n            \"id\": 6,\n            \"name\": \"Kendriya Vidyalaya\",\n            \"address\": \"Chennai\",\n            \"latitude\": 13.0826997756958,\n            \"longitude\": 80.27069854736328,\n            \"distance_km\": 515.24\n        },\n        {\n            \"id\": 3,\n            \"name\": \"St Xavier School\",\n            \"address\": \"Mumbai\",\n            \"latitude\": 19.076000213623047,\n            \"longitude\": 72.87770080566406,\n            \"distance_km\": 621.46\n        },\n        {\n            \"id\": 14,\n            \"name\": \"Holy Cross School\",\n            \"address\": \"Bhopal\",\n            \"latitude\": 23.259899139404297,\n            \"longitude\": 77.41259765625,\n            \"distance_km\": 662.78\n        },\n        {\n            \"id\": 11,\n            \"name\": \"Greenwood High\",\n            \"address\": \"Coimbatore\",\n            \"latitude\": 11.016799926757812,\n            \"longitude\": 76.95580291748047,\n            \"distance_km\": 727.06\n        },\n        {\n            \"id\": 17,\n            \"name\": \"Sai International School\",\n            \"address\": \"Bhubaneswar\",\n            \"latitude\": 20.296100616455078,\n            \"longitude\": 85.82450103759766,\n            \"distance_km\": 837.16\n        },\n        {\n            \"id\": 20,\n            \"name\": \"Little Flower School\",\n            \"address\": \"Kochi\",\n            \"latitude\": 9.93120002746582,\n            \"longitude\": 76.26730346679688,\n            \"distance_km\": 862.76\n        },\n        {\n            \"id\": 12,\n            \"name\": \"Modern School\",\n            \"address\": \"Lucknow\",\n            \"latitude\": 26.84670066833496,\n            \"longitude\": 80.94619750976562,\n            \"distance_km\": 1082.07\n        },\n        {\n            \"id\": 9,\n            \"name\": \"Birla High School\",\n            \"address\": \"Jaipur\",\n            \"latitude\": 26.912399291992188,\n            \"longitude\": 75.78730010986328,\n            \"distance_km\": 1095.15\n        },\n        {\n            \"id\": 13,\n            \"name\": \"Delhi World Public School\",\n            \"address\": \"Patna\",\n            \"latitude\": 25.594100952148438,\n            \"longitude\": 85.13760375976562,\n            \"distance_km\": 1142.58\n        },\n        {\n            \"id\": 8,\n            \"name\": \"Army Public School\",\n            \"address\": \"Kolkata\",\n            \"latitude\": 22.572599411010742,\n            \"longitude\": 88.36389923095703,\n            \"distance_km\": 1181.88\n        },\n        {\n            \"id\": 16,\n            \"name\": \"Blue Bells School\",\n            \"address\": \"Gurgaon\",\n            \"latitude\": 28.45949935913086,\n            \"longitude\": 77.02660369873047,\n            \"distance_km\": 1240.43\n        },\n        {\n            \"id\": 10,\n            \"name\": \"Lotus Valley School\",\n            \"address\": \"Noida\",\n            \"latitude\": 28.535499572753906,\n            \"longitude\": 77.39099884033203,\n            \"distance_km\": 1244.92\n        },\n        {\n            \"id\": 21,\n            \"name\": \"Delhi Public School\",\n            \"address\": \"New Delhi\",\n            \"latitude\": 28.61389923095703,\n            \"longitude\": 77.20899963378906,\n            \"distance_km\": 1255.39\n        },\n        {\n            \"id\": 15,\n            \"name\": \"Spring Dale School\",\n            \"address\": \"Chandigarh\",\n            \"latitude\": 30.733299255371094,\n            \"longitude\": 76.77940368652344,\n            \"distance_km\": 1494.28\n        }\n    ]\n}"
+        }
+      ]
+    }
+  ]
+}
